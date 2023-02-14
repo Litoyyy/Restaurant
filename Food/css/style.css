@@ -1,0 +1,177 @@
+body {
+  font-family: "Circe", sans-serif;
+}
+
+section:not(.banSection) {
+  padding: 75px 0;
+}
+
+header {
+  position: fixed;
+  height: 100vh;
+  background-color: #333333;
+  z-index: 50;
+}
+header .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 20px;
+  height: 100%;
+}
+header .header .logo-burger {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+header .header .logo-burger .logo {
+  width: 80px;
+  height: 100%;
+}
+header .header .logo-burger .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header .header .logo-burger .burger {
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+header .header .logo-burger .burger div {
+  background-color: #B59571;
+  height: 4px;
+  border-radius: 1000px;
+}
+header .header .logo-burger .burger div:nth-of-type(1) {
+  width: 50%;
+}
+header .header .logo-burger .burger div:nth-of-type(3) {
+  width: 75%;
+}
+header .header .social ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+header .header .social ul a {
+  width: 40px;
+  height: 40px;
+}
+header .header .social ul a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.banSection {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/BG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.banSection .banBlock {
+  position: relative;
+  margin: 0 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0 150px;
+}
+.banSection .banBlock .text {
+  padding-left: 300px;
+  font-size: 54px;
+  font-weight: bold;
+  color: #FFFFFF;
+  width: 70%;
+}
+.banSection .banBlock nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  justify-content: flex-end;
+  align-items: center;
+}
+.banSection .banBlock nav ul a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+}
+.banSection .banBlock nav ul li:last-of-type a {
+  padding: 10px 20px;
+  background-color: #B59571;
+  font-weight: bold;
+}
+
+.banSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #333333;
+  opacity: 0.6;
+}
+
+.title__block {
+  display: inline-block;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-right: 90px;
+  margin-bottom: 80px;
+}
+
+.title__block::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #B59571;
+  transform: translateY(-50%);
+}
+
+.title__name {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.2;
+}
+
+.aboutSection .aboutBlock .infoBlock, .aboutSection .menuBlock .infoBlock, .menuSection .aboutBlock .infoBlock, .menuSection .menuBlock .infoBlock {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  padding-left: 220px;
+}
+.aboutSection .aboutBlock .infoBlock .item .title__name, .aboutSection .menuBlock .infoBlock .item .title__name, .menuSection .aboutBlock .infoBlock .item .title__name, .menuSection .menuBlock .infoBlock .item .title__name {
+  width: 60%;
+}
+.aboutSection .aboutBlock .infoBlock .item p, .aboutSection .menuBlock .infoBlock .item p, .menuSection .aboutBlock .infoBlock .item p, .menuSection .menuBlock .infoBlock .item p {
+  font-size: 18px;
+}
+.aboutSection .aboutBlock .infoBlock .item p:last-of-type, .aboutSection .menuBlock .infoBlock .item p:last-of-type, .menuSection .aboutBlock .infoBlock .item p:last-of-type, .menuSection .menuBlock .infoBlock .item p:last-of-type {
+  margin-bottom: 0;
+}/*# sourceMappingURL=style.css.map */
